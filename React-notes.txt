@@ -1,0 +1,46 @@
+Download VS code, Nodejs
+
+if we get any error creating create-react-app
+
+we need to create a folder "npm" in the specified path in C drive
+
+Create React project
+===========================
+npx create-react-app youtube
+
+cd youtube
+
+npm run start
+
+
+
+Install Tailwind
+=================
+npm i -D tailwindcss 
+
+we need to create config.
+npx tailwindcss init
+
+
+App.css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+tailwind.config.js:
+content: ["./src/**/*.js"],
+
+shortcut to create component: rafce hit enter(React snippets extension )
+it will create a biolerplate code
+
+
+Create a components like Head, Body etc
+
+
+High order function: is a function that takes a component and returns a new component
+Takes exiting component and return modification (You tube ads)
+
+Debouncing: search option. added the timer to skipping some of the events
+
+
+rafce: react arrow function export component
