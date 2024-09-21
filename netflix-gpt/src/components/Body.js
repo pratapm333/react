@@ -9,7 +9,7 @@ import { useDispatch } from "react-redux";
 import { addUser, removeUser } from "../utils/userSlide";
 
 const Body = () => {
-const dispatch = useDispatch();
+
     const appRouter = createBrowserRouter([
         {
             path: "/",
@@ -21,17 +21,7 @@ const dispatch = useDispatch();
         },
     ]);
 
-    useEffect(()=>{
-        onAuthStateChanged(auth, (user) => {
-            if (user) {
-               
-              const {uid, email, displayName, photoURL } = user;
-              dispatch(addUser({uid: uid, email:email, displayName:displayName, photoURL: photoURL}));
-            } else {
-              dispatch(removeUser()); 
-            }
-          });
-    }, [])
+   
 
   return (
     <div>
